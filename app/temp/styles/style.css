@@ -1020,11 +1020,11 @@ body {
     color: #222222;
   }
 }
-.poslovi article:nth-of-type(2n) span {
+.poslovi article:nth-of-type(2n) a {
   color: #d6d6d6 !important;
 }
 @media screen and (max-width: 500px) {
-  .poslovi article:nth-of-type(2n) span {
+  .poslovi article:nth-of-type(2n) a {
     color: #c41230 !important;
   }
 }
