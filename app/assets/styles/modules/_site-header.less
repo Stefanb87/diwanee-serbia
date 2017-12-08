@@ -1,0 +1,250 @@
+.dash {
+    width: 65px;
+    height: 3px;
+    background-color: #c41230;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (max-width: 990px) {
+        display: none;
+    }
+}
+
+.site-header__menu-icon {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    cursor: pointer;
+    display: none;
+
+    @media screen and (max-width: 990px) {
+        display: block;
+    }
+}
+
+.nav-mobile {
+    .bg-transparent(#222222, .98);
+    padding-top: 70px;
+    text-align: center;
+    position: relative;
+    max-width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        .clearfix;
+    }
+
+    li {
+        list-style: none;
+        margin-bottom: 40px;
+        font-size: 1rem;
+
+        a {
+            color: #e0e0e0;
+            font-weight: 300;
+            text-decoration: none;
+            display: block;
+        }
+    }
+
+    .social-content-mobnav {
+        padding-bottom: 20px;
+
+        .fa-twitter {
+            margin-left: 40px;
+        }
+    }
+
+    span {
+        color: #848484;
+        font-size: .9rem;
+    }
+
+    i {
+        color: #848484;
+        margin-left: 16px;
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+}
+
+.mobnav-visible {
+    opacity: 1;
+
+    @media screen and (min-width: 990px) {
+        display: none;
+    }
+}
+
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: #222222;
+    margin-bottom: 5px;
+}
+
+.bar2 {
+    top: 30px;
+}
+
+.bar3 {
+    top: 40px;
+}
+
+.site-header {
+    background-image: url('../../assets/images/header-bckgr.jpg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 700px;
+
+    @media screen and (max-width: 990px) {
+        height: 550px;
+    }
+
+    @media screen and (max-width: 700px) {
+        height: 500px;
+    }
+
+    @media screen and (max-width: 600px) {
+        height: 400px;
+    }
+
+    .nav-wrapper {
+        height: 100px;
+        padding-left: 260px;
+        padding-right: 260px;
+
+        @media screen and (max-width: 1300px) {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        @media screen and (max-width: 900px) {
+            padding-left: 30px;
+        }
+
+        @media screen and (max-width: 700px) {
+            padding-left: 0px;
+        }
+    }
+
+    &__logo {
+        width: 200px;
+        position: absolute;
+        margin-top: 20px;
+
+        img {
+            @media screen and (max-width: 700px) {
+                width: 130px;
+            }
+
+            @media screen and (max-width: 530px) {
+                width: 110px;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            width: 150px;
+        }
+    }
+
+    nav {
+        float: right;
+        margin-top: 33px;
+
+        @media screen and (max-width: 990px) {
+            display: none;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            .clearfix;
+        }
+
+        li {
+            list-style: none;
+            display: inline-block;
+            padding-right: 7px;
+            padding: 5px 8px;
+            font-size: 0.8125rem;
+
+            a {
+                color: #000;
+                font-weight: 400;
+                text-decoration: none;
+                display: block;
+            }
+        }
+    }
+
+    &__text-content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-60%);
+        width: 100%;
+        text-align: center;
+
+        @media screen and (max-width: 601px) {
+            top: 35%;
+        }
+
+        h1 {
+            font-size: 5.3rem;
+            font-weight: 500;
+            margin-top: 0px;
+            margin-bottom: 20px;
+
+            @media screen and (max-width: 1300px) {
+                font-size: 4.5rem;
+            }
+
+            @media screen and (max-width: 900px) {
+                font-size: 3.7rem;
+            }
+
+            @media screen and (max-width: 700px) {
+                font-size: 3rem;
+            }
+
+            @media screen and (max-width: 530px) {
+                font-size: 2.4rem;
+            }
+        }
+
+        h3 {
+            font-size: 1.7rem;
+            font-weight: 400;
+            width: 625px;
+            margin-top: 45px;
+            margin-left: auto;
+            margin-right: auto;
+
+            @media screen and (max-width: 1300px) {
+                font-size: 1.6rem;
+            }
+
+            @media screen and (max-width: 900px) {
+                font-size: 1.4rem;
+                width: 510px;
+            }
+
+            @media screen and (max-width: 700px) {
+                font-size: 1.2rem;
+                width: 400px;
+            }
+
+            @media screen and (max-width: 530px) {
+                font-size: 1rem;
+                width: 300px;
+                margin-top: 20px;
+            }
+        }
+    }
+}

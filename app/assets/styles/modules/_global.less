@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.clearfix {
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+.bg-transparent(@color, @alpha: 1) {
+    background: rgba( red(@color), green(@color), blue(@color), @alpha);
+}
