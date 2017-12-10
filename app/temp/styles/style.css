@@ -972,7 +972,11 @@ body {
 }
 .poslovi article:nth-of-type(n) {
   color: #222222;
-  cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+  .poslovi article:nth-of-type(n) {
+    background-color: #f8f7f5;
+  }
 }
 .poslovi article:nth-of-type(n) a.hover-orange:hover {
   color: #c41230 !important;
@@ -987,6 +991,7 @@ body {
   font-size: .7rem;
   font-weight: 500;
   padding: 7px 15px;
+  cursor: pointer;
 }
 @media screen and (max-width: 990px) {
   .poslovi article:nth-of-type(n) a {
@@ -1012,7 +1017,6 @@ body {
 .poslovi article:nth-of-type(2n) {
   background-color: #222222;
   color: #d6d6d6;
-  cursor: pointer;
 }
 @media screen and (max-width: 500px) {
   .poslovi article:nth-of-type(2n) {
